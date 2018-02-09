@@ -1,6 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Limelight|Open+Sans');
+
+body {
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    background: linear-gradient(to right, rgba(234, 152, 73, 1) 0%, rgba(234, 152, 73, .5) 100%);
+    font-family: 'Open Sans', sans-serif;
+    color: #363636;
+}
+h1   {
+    font-family: 'Limelight', cursive;
+    
+}
+h2 {
+    font-size: 4em;
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-size: 6em;
+    letter-spacing: -.1em;
+    margin-bottom: 0;
+    line-height: .7;
+    margin-top: .2em;
+}
 .letter {
-    border-bottom: 1px black solid;
-    margin: 0 1em;
+    background: #000;
+    color: white;
+    margin: 0 .2em;
     float: left;
     width: 10px;
+    height: 30px;
+}
+
+.jumbotron {
+    background: rgba(233, 236, 239, .2);
+}
+small {
+    font-size: 2rem;
+    letter-spacing: .77em;
+}
+.page-header {
+    white-space: nowrap;
 }

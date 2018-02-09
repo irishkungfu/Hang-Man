@@ -4,22 +4,38 @@
     <title>Hangman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-
+    
 </head>
 <body>
-    <div id="answer" class="jumbotron"></div>
-    <div id="guesses" class="jumbotron">Guesses Left: <span id="remaining_guesses">13</span></div>
-    <div id="incorrect_guesses" class="jumbotron">Incorrect Guesses: <span id="incorrect">none</span></div>
-    <div id="wins_container" class="jumbotron">Wins: <span id="wins">0</span></div>
-    
+    <header class="container">
+        <div class="row">
+            <div class="page-header col-md-9">
+                <h1 id="logo">
+                        <i class="fas fa-film"></i> Hangman 
+                </h1><small>Classic Movies</small>
+            </div>
+            <div class="col-md-3 text-right p-4">
+                    <div id="guesses">Guesses Left: <span id="remaining_guesses">13</span></div>
+                    <div id="incorrect_guesses">Incorrect Guesses: <span id="incorrect">none</span></div>
+                    <div id="wins_container">Wins: <span id="wins">0</span></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container" id="main">
+        <div class="row">
+            <div id="wins_container" class="jumbotron col-12"><h2><span id="game_status">Press any key to begin guessing</span></h2></div>
+        </div>
+        <div class="row jumbotron">
+            <div id="answer" class="col-md-8"></div>
+
+        </div>
+    </section>
+
+    <!-- <script src="assets/javascript/game.js"></script> -->
+    <script src="assets\javascript\game.js"></script>
 </body>
-<!-- <script src="assets/javascript/game.js"></script> -->
-<script src="assets\javascript\game.js"></script>
+
 </html>
-
-
-<!-- Step one
-    Produce dashed lines = to word selected
-
--->
