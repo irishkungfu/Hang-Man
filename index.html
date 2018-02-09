@@ -3,11 +3,23 @@
 <head>
     <title>Hangman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 
 </head>
 <body>
-    <span id="state-msg"></span>
+    <div id="answer" class="jumbotron"></div>
+    <div id="guesses" class="jumbotron">Guesses Left: <span id="remaining_guesses">13</span></div>
+    <div id="incorrect_guesses" class="jumbotron">Incorrect Guesses: <span id="incorrect">none</span></div>
+    <div id="wins_container" class="jumbotron">Wins: <span id="wins">0</span></div>
+    
 </body>
-<script src="assets/javascript/game.js"></script>
+<!-- <script src="assets/javascript/game.js"></script> -->
+<script src="assets\javascript\game.js"></script>
 </html>
+
+
+<!-- Step one
+    Produce dashed lines = to word selected
+
+-->
