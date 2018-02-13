@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Limelight|Open+Sans');
 
+html {
+    height: 100%;
+}
 body {
     background: url('../images/curtain.svg');
     background-size: cover; 
     background-repeat: no-repeat;      
     font-family: 'Open Sans', sans-serif;
     color: #363636;
+    height: 100%;
+    font-size: 1.33em;   
 }
 h1   {
     font-family: 'Limelight', cursive;
     
 }
 h2 {
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Open Sans', sans-serif;
 }
 h1 {
@@ -31,16 +36,22 @@ h1 {
 }
 
 .jumbotron {
-    background: rgba(233, 236, 239, .5);
+    background: rgba(233, 236, 239, 0);
     margin-left: 1em;
     margin-right: 1em;
 }
 small {
     font-size: 1.33rem;
     letter-spacing: .77em;
+    color: #fff;
 }
 .page-header {
     white-space: nowrap;
+    text-shadow: 3px 3px 0px #000;
+    color: #fff;
+}
+#header {
+    justify-content: center;
 }
 
 @media (max-width: 767px) {
@@ -54,3 +65,21 @@ small {
         font-size: 1rem;
     }
  }
+ @media (min-width: 768px) {
+     #winscontainer {
+         padding-top: 4em;
+     }
+ }
+.center {
+    justify-content: center;
+}
+.jumbotron_padding {
+    padding: 0;
+}
+#game_status {
+
+    text-shadow: 3px 3px 0px #fff;
+}
+header {
+    padding-bottom: 6em;
+}

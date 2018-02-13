@@ -8,26 +8,47 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     
 </head>
-<body>
+<body>  
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Victory!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id='modal_body'>
+            </div>
+            <audio controls id='audio'>
+                    <source src="https://ia800305.us.archive.org/21/items/AsTimeGoesBy_591/04Track4.ogg" type="audio/ogg">
+                  Your browser does not support the audio element.
+                  </audio>
+
+            </div>
+        </div>
+    </div>
     <header class="container">
-        <div class="row jumbotron" id="header">
-            <div class="page-header">
+        <div class="row jumbotron p-0 pt-4" id="header">
+            <div class="page-header text-center">
                 <h1 id="logo">
                         <i class="fas fa-film"></i> Hangman 
-                </h1><small>Classic Movies</small>
+                </h1>
+                <small class="text-center">Classic Movies</small>
             </div>
         </div>
     </header>
 
     <section class="container" id="main">
-        <div class="row jumbotron ">
-            <div id="wins_container" class="text-center"><h2><span id="game_status">Press any key to begin guessing</span></h2></div>
+        <div class="row jumbotron center jumbotron_padding pt-4">
+            <div id="wins_container" class="text-center"><h2><span id="game_status"><span>Press any key to begin guessing</span></span></h2></div>
         </div>
-        <div class="row jumbotron">
+        <div class="row jumbotron center jumbotron_padding">
             <div id="answer" class="text-center offset-1"></div>
 
         </div>
-        <div class="text-center p-4 jumbotron">
+        <div class="text-center jumbotron center jumbotron_padding">
             <div id="guesses">Guesses Left: <span id="remaining_guesses">13</span></div>
             <div id="incorrect_guesses">Incorrect Guesses: <span id="incorrect">none</span></div>
             <div id="wins_container">Wins: <span id="wins">0</span></div>
@@ -35,6 +56,9 @@
     </section>
 
     <!-- <script src="assets/javascript/game.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="assets\javascript\game.js"></script>
 </body>
 
