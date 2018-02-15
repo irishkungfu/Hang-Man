@@ -38,6 +38,7 @@ function Movie(title, stub, video) {
 function setState () {
     var currentState = new GameState(chooseTitle());
     console.log('Inside current set state = ' + currentState.selectedMovie.title)
+    currentTitle = currentState.selectedMovie.title;
     return(currentState);
 };
 
@@ -85,6 +86,7 @@ function startApp () {
 // Displays modal overlay, updates win counter, handles media playback
 function winner () {
     var target = document.getElementById("modal_body");
+    var headlineTarget = document.getElementById('exampleModalLabel');
 
     var video = document.createElement('video');
     video.src = state.selectedMovie.video;
@@ -97,6 +99,7 @@ function winner () {
     var stub = document.createElement('div');
     stub.innerHTML = state.selectedMovie.stub;
     stub.id = 'stub';
+    headlineTarget.innerHTML = currentTitle;
     
     wins++;
     document.getElementById('wins').textContent = wins;
@@ -104,6 +107,7 @@ function winner () {
     $('#exampleModal').modal();
     target.appendChild(video);
     target.appendChild(stub);
+    
     // console.log(movieTitles.length);
     $("#exampleModal").on("hidden.bs.modal", function () {
         target.innerHTML = "";
@@ -128,13 +132,14 @@ function loadSpaces () {
 };
 
 var movieTitles = [gone_with_the_wind, casablanca, sunrise, psycho, pulp_fiction, sunset_boulevard, forest_gump, star_wars, citizen_kane, the_godfather, the_wizard_of_oz];  // Not sure why, but chooseTitle() doesn't work if this is placed at the begining.
-
+var currentTitle;
 startApp();
 
 // Listens for key press and populates letter spans based on user input.  Updates the game's state based on key presses
 document.onkeyup = function(event) {
     keyPress = event.key;
     keyPress = keyPress.toLowerCase();
+
     state.selectedMovie.title = state.selectedMovie.title.toLowerCase();
 
     var letters = "abcdefghijklmnopqrstuvwxyz0";
