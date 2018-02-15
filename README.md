@@ -1,5 +1,7 @@
 # Hangman Classic Movies
-
+- [Hangman Classic Movies](#hangman-classic-movies)
+    - [Overview](#overview)
+    - [Notes](#notes)
 ## Overview
 Hangman Classic Movies is based on the children's classic hangman. The purpose of the game is to guess the word selected.  After each correct selection, you get earn a win!
 
