@@ -17,7 +17,7 @@ h1   {
     
 }
 h2 {
-    font-size: 2em;
+    font-size: 1em;
     font-family: 'Open Sans', sans-serif;
 }
 h1 {
@@ -55,9 +55,6 @@ small {
 }
 
 @media (max-width: 767px) {
-    h2 {
-        font-size: 1em;
-    }
     h1 {
         font-size: 3em;
     }
@@ -81,10 +78,7 @@ small {
 .jumbotron_padding {
     padding: 0;
 }
-#game_status {
 
-    text-shadow: 3px 3px 0px #fff;
-}
 header {
-    padding-bottom: 6em;
+    padding-bottom: 2em;
 }
