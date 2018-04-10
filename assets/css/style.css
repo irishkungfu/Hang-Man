@@ -82,3 +82,6 @@ small {
 header {
     padding-bottom: 2em;
 }
+#main {
+    margin-top: 75px;
+}
